@@ -1,114 +1,114 @@
-# Blog léger NodeJS/Express/Javascript
+# Lightweight NodeJS/Express/Javascript Blog
 
-[![Screenshot du blog](public/images/screenshot-blog.PNG)]()
+[![Blog Screenshot](public/images/screenshot-blog.PNG)]()
 
-Un blog léger, rapide et responsive développé avec NodeJS, Express et Javascript. Permet de créer, modifier et supprimer des articles facilement.
+FRENCH VERSION - A lightweight, fast, and responsive blog developed with NodeJS, Express, and Javascript. Allows you to create, modify, and delete articles easily.
 
-## Fonctionnalités
+## Features
 
-- **Création d'articles :** Interface intuitive pour rédiger et publier de nouveaux articles.
-- **Modification d'articles :** Possibilité de mettre à jour et de modifier les articles existants.
-- **Suppression d'articles :** Suppression facile des articles obsolètes ou non pertinents.
-- **Design Responsive :** Adapté à tous les types d'écrans (ordinateurs, tablettes, smartphones).
-- **Backend NodeJS/Express :** API RESTful pour une gestion efficace des données.
-- **Frontend Javascript :** Interface utilisateur dynamique et réactive.
+- **Article Creation:** Intuitive interface for writing and publishing new articles.
+- **Article Modification:** Ability to update and modify existing articles.
+- **Article Deletion:** Easy deletion of obsolete or irrelevant articles.
+- **Responsive Design:** Adapted to all types of screens (computers, tablets, smartphones).
+- **Backend NodeJS/Express:** RESTful API for efficient data management.
+- **Frontend Javascript:** Dynamic and reactive user interface.
 
-## Technologies utilisées
+## Technologies Used
 
-- **Backend :**
+- **Backend:**
   - NodeJS
   - Express
   - EJS
-- **Frontend :**
+- **Frontend:**
   - Javascript
   - HTML
   - CSS
-- **Autres :**
-  - npm pour la gestion des dépendances
-  - Git pour le contrôle de version
+- **Other:**
+  - npm for dependency management
+  - Git for version control
 
 ## Installation
 
-1.  **Clonez le repository :**
+1.  **Clone the repository:**
 
     ```bash
     git clone https://github.com/Antoinekoe/blog.git
-    cd [nom_du_repertoire_du_projet]
+    cd [project_directory_name]
     ```
 
-2.  **Installez les dépendances :**
+2.  **Install the dependencies:**
 
     ```bash
     npm install
     ```
 
-3.  **Démarrage du serveur :**
+3.  **Start the server:**
     ```bash
     nodemon index.js
     ```
-    Le blog sera accessible à l'adresse `http://localhost:[PORT]` (remplacez `[PORT]` par le port configuré dans index.js ou par défaut, généralement 3000).
+    The blog will be accessible at `http://localhost:[PORT]` (replace `[PORT]` with the port configured in index.js or the default, usually 3000).
 
-## Structure du projet
+## Project Structure
 
 ```
 Blog/
-├── node_modules/ # Dossier contenant les dépendances npm (non listé explicitement)
-├── public/ # Dossier contenant les fichiers statiques (CSS, JS, images)
-│ ├── images/ # Dossier pour les images
-│ │ ├── bg-2.png
-│ │ ├── bg.png
-│ │ ├── blog.svg
-│ │ └── screenshot-blog.PNG
-│ └── styles.css # Fichier CSS (global, si utilisé)
-├── views/ # Dossier contenant les vues (templates EJS)
-│ ├── Articles/ # Dossier pour les vues des articles
-│ │ ├── create.ejs # Vue pour créer un article
-│ │ ├── delete.ejs # Vue pour supprimer un article
-│ │ ├── index.ejs # Vue pour la liste des articles
-│ │ └── modify.ejs # Vue pour modifier un article
-│ ├── partials/ # Dossier pour les parties réutilisables des vues
-│ │ ├── footer.ejs # Footer
-│ │ └── header.ejs # Header
-│ └── templateArticle.js # Fichier de template javascript pour un article
-├── .gitignore # Fichier spécifiant les fichiers et dossiers à ignorer par Git
-├── index.js # Point d'entrée de l'application (serveur Express, ou autre)
-├── package-lock.json # Fichier de verrouillage des dépendances npm
-├── package.json # Fichier de configuration npm
-└── README.md # Ce fichier
+├── node_modules/ # Directory containing npm dependencies (not explicitly listed)
+├── public/ # Directory containing static files (CSS, JS, images)
+│   ├── images/ # Directory for images
+│   │   ├── bg-2.png
+│   │   ├── bg.png
+│   │   ├── blog.svg
+│   │   └── screenshot-blog.PNG
+│   └── styles.css # CSS file (global, if used)
+├── views/ # Directory containing views (EJS templates)
+│   ├── Articles/ # Directory for article views
+│   │   ├── create.ejs # View for creating an article
+│   │   ├── delete.ejs # View for deleting an article
+│   │   ├── index.ejs # View for the article list
+│   │   └── modify.ejs # View for modifying an article
+│   ├── partials/ # Directory for reusable view parts
+│   │   ├── footer.ejs # Footer
+│   │   └── header.ejs # Header
+│   └── templateArticle.js # Javascript template file for an article
+├── .gitignore # File specifying files and folders to ignore by Git
+├── index.js # Application entry point (Express server, or other)
+├── package-lock.json # npm dependency lock file
+├── package.json # npm configuration file
+└── README.md # This file
 ```
 
-## Comment contribuer
+## How to Contribute
 
-Les contributions sont les bienvenues ! Si vous souhaitez contribuer au projet, veuillez suivre ces étapes :
+Contributions are welcome! If you wish to contribute to the project, please follow these steps:
 
-1.  **Fork le repository.**
-2.  **Créez une branche pour votre fonctionnalité (feature) ou correction de bug (bugfix) :**
-
-    ```bash
-    git checkout -b feature/ma-nouvelle-fonctionnalite
-    # ou
-    git checkout -b bugfix/correction-bug
-    ```
-
-3.  **Effectuez vos modifications et commitez-les avec des messages clairs et descriptifs.**
-
-4.  **Poussez votre branche sur votre fork :**
+1.  **Fork the repository.**
+2.  **Create a branch for your feature or bugfix:**
 
     ```bash
-    git push origin feature/ma-nouvelle-fonctionnalite
+    git checkout -b feature/my-new-feature
+    # or
+    git checkout -b bugfix/bug-fix
     ```
 
-5.  **Créez une pull request (PR) vers la branche `main` du repository original.**
+3.  **Make your changes and commit them with clear and descriptive messages.**
 
-## Points d'amélioration potentiels (TODO)
+4.  **Push your branch to your fork:**
 
-- Ajouter la possibilité de catégoriser les articles.
-- Implémenter un système d'authentification pour la gestion des articles (pour l'instant, tout le monde peut créer, modifier, supprimer).
-- Optimiser les performances (par exemple, avec la mise en cache).
-- Ajouter des tests unitaires et d'intégration.
-- Implémenter un système de commentaires.
-- Connecter le blog à une BDD.
+    ```bash
+    git push origin feature/my-new-feature
+    ```
 
-## Licence
+5.  **Create a pull request (PR) to the `main` branch of the original repository.**
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+## Potential Improvements (TODO)
+
+- Add the ability to categorize articles.
+- Implement an authentication system for article management (currently, anyone can create, modify, delete).
+- Optimize performance (e.g., with caching).
+- Add unit and integration tests.
+- Implement a commenting system.
+- Connect the blog to a database.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
