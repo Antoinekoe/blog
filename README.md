@@ -59,7 +59,7 @@ Blog/
 │   │   ├── bg.png
 │   │   ├── blog.svg
 │   │   └── screenshot-blog.PNG
-│   └── styles.css # CSS file (global, if used)
+│   └── styles.css # CSS file
 ├── views/ # Directory containing views (EJS templates)
 │   ├── Articles/ # Directory for article views
 │   │   ├── create.ejs # View for creating an article
@@ -71,7 +71,7 @@ Blog/
 │   │   └── header.ejs # Header
 │   └── templateArticle.js # Javascript template file for an article
 ├── .gitignore # File specifying files and folders to ignore by Git
-├── index.js # Application entry point (Express server, or other)
+├── index.js # Application entry point
 ├── package-lock.json # npm dependency lock file
 ├── package.json # npm configuration file
 └── README.md # This file
