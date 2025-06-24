@@ -1,4 +1,4 @@
-# Blog Léger NodeJS/Express/Javascript
+# Blog léger NodeJS/Express/Javascript
 
 [![Screenshot du blog](public/images/screenshot-blog.PNG)]()
 
