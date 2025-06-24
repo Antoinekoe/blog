@@ -50,6 +50,7 @@ Un blog léger, rapide et responsive développé avec NodeJS, Express et Javascr
 
 ## Structure du projet
 
+```
 Blog/
 ├── node_modules/ # Dossier contenant les dépendances npm (non listé explicitement)
 ├── public/ # Dossier contenant les fichiers statiques (CSS, JS, images)
@@ -74,6 +75,7 @@ Blog/
 ├── package-lock.json # Fichier de verrouillage des dépendances npm
 ├── package.json # Fichier de configuration npm
 └── README.md # Ce fichier
+```
 
 ## Comment contribuer
 
