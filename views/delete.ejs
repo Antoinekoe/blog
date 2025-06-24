@@ -1,0 +1,19 @@
+  <%- include("partials/header.ejs") %>
+
+  <body>
+    <div class="container">
+      <h1>Supprimer un article</h1>
+      <form action="/delete/submit" method="post">
+        <label for="title">Nom de l'article :</label>
+        <select name="choix" id="choix" required>
+          <option value="" disabled selected></option>
+          <% listeArticles.forEach(article => { %>
+          <option value="<%= article %>"><%= article %></option>
+          <% }); %>
+        </select>
+        <input type="submit" value="Envoyer" />
+      </form>
+    </div>
+  </body>
+
+  </html>

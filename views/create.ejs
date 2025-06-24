@@ -1,0 +1,23 @@
+  <%- include("partials/header.ejs") %>
+
+  <body>
+    <div class="container">
+      <h1>Créer un article</h1>
+      <form action="/create/submit" method="post">
+        <label for="title">Nom de l'article :</label>
+        <input type="text" name="aName" id="" maxlength="100" required>
+        <label for="description">Description :</label>
+        <textarea id="description" name="description" required></textarea>
+        <input type="submit" value="Envoyer" />
+        <% if (articleDejaCree === true && nombreMaxArticle === true) { %>
+        <p class="article-existant">L'article existe déjà, et vous avez atteint la limite d'article !</p>
+        <% } else if (articleDejaCree === true) {  %>
+        <p class="article-existant">L'article existe déjà ! </p>
+        <% } else if (nombreMaxArticle === true ) { %>
+        <p class="article-existant">Le nombre maximum d'articles a été crée !</p>
+        <% } %>
+      </form>
+    </div>
+  </body>
+
+  </html>

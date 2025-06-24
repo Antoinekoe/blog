@@ -1,0 +1,256 @@
+body {
+  background-image: url("images/bg-2.png");
+  background-size: cover;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.ul-header {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  padding-top: 10px;
+  padding-right: 10px;
+  font-size: 0.8rem;
+}
+
+.li-header {
+  transition: opacity 0.3s ease;
+}
+
+.li-header:hover {
+  opacity: 0.6;
+}
+
+.article-existant {
+  color: red;
+}
+
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  max-width: 50%;
+  gap: 2rem;
+  justify-items: center;
+  margin: 2rem auto;
+  overflow-wrap: break-word;
+}
+
+.articles {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.articles:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contenu-articles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  hyphens: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.contenu-articles > p {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.ul-articles {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.li-articles {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.li-articles a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.li-articles a:hover {
+  color: #0056b3;
+}
+
+.articles-container > p {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  width: 3rem;
+  fill: white;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  hyphens: auto;
+  max-width: 80%;
+}
+
+p {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.filter-white {
+  filter: brightness(0) invert(1);
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .articles {
+    padding: 1rem;
+  }
+
+  .li-articles {
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1064px) {
+  .articles {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  h1 {
+    text-align: center;
+  }
+  .container {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 644px) {
+  .articles-container {
+    max-width: 90%;
+  }
+}
