@@ -4,7 +4,7 @@
 
 FRENCH VERSION - A lightweight, fast, and responsive blog developed with NodeJS, Express, and Javascript. Allows you to create, modify, and delete articles easily.
 
-## Features
+## ✨ Features
 
 - **Article Creation:** Intuitive interface for writing and publishing new articles.
 - **Article Modification:** Ability to update and modify existing articles.
@@ -13,7 +13,7 @@ FRENCH VERSION - A lightweight, fast, and responsive blog developed with NodeJS,
 - **Backend NodeJS/Express:** RESTful API for efficient data management.
 - **Frontend Javascript:** Dynamic and reactive user interface.
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - **Backend:**
   - NodeJS
@@ -48,7 +48,7 @@ FRENCH VERSION - A lightweight, fast, and responsive blog developed with NodeJS,
     ```
     The blog will be accessible at `http://localhost:[PORT]` (replace `[PORT]` with the port configured in index.js or the default, usually 3000).
 
-## Project Structure
+## 🗂️ Project Structure
 
 ```
 Blog/
@@ -77,7 +77,7 @@ Blog/
 └── README.md # This file
 ```
 
-## How to Contribute
+## 🤝 How to Contribute
 
 Contributions are welcome! If you wish to contribute to the project, please follow these steps:
 
@@ -100,7 +100,7 @@ Contributions are welcome! If you wish to contribute to the project, please foll
 
 5.  **Create a pull request (PR) to the `main` branch of the original repository.**
 
-## Potential Improvements (TODO)
+## 🔧 Potential Improvements (TODO)
 
 - Add the ability to categorize articles.
 - Implement an authentication system for article management (currently, anyone can create, modify, delete).
@@ -109,6 +109,6 @@ Contributions are welcome! If you wish to contribute to the project, please foll
 - Implement a commenting system.
 - Connect the blog to a database.
 
-## License
+## 🔑 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
