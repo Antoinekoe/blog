@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+
+<body>
+  <div class="container">
+    <h1>Parlez de ce qui vous passionne, à votre manière</h1>
+    <div class="articles-container">
+      <% if (locals.nomArticle) { listeArticles.push(nomArticle); listeArticles.forEach(function(articles) { %>
+      <div class="articles">
+        <ul class="ul-articles">
+          <li class="li-articles"><a href="/Articles/<%=articles-%> "><%= articles %></a></li>
+        </ul>
+      </div>
+
+      <% } )} else if (listeArticles.length > 0)  { %>
+      <% listeArticles.forEach(function(articles) { %>
+      <div class="articles">
+        <ul class="ul-articles">
+          <li class="li-articles"><a href="/Articles/<%=articles%>"><%= articles %></a></li>
+        </ul>
+      </div>
+      <% })} else { %>
+      <p> À toi de créer ton premier article ! </p>
+      <% }; %>
+    </div>
+  </div>
+</body>
+
+</html>

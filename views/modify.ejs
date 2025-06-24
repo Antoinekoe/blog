@@ -1,0 +1,22 @@
+  <%- include("partials/header.ejs") %>
+
+  <body>
+    <div class="container">
+      <h1>Modifier un article</h1>
+      <form action="/modify/submit" method="post">
+        <label for="title">Nom de l'article à modifier :</label>
+        <select name="choix" id="choix" required>
+          <% listeArticles.forEach(article => { %>
+          <option value="<%= article %>"><%= article %></option>
+          <% }); %>
+        </select>
+        <label for="aNewName">Nouveau nom de l'article :</label>
+        <input type="text" name="aNewName" id="aNewName" maxlength="150" required>
+        <label for="aNewDescription">Description :</label>
+        <textarea id="aNewDescription" name="aNewDescription" required></textarea>
+        <input type="submit" value="Envoyer" />
+      </form>
+    </div>
+  </body>
+
+  </html>
