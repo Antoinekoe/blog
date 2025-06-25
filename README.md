@@ -74,7 +74,9 @@ Blog/
 ├── index.js # Application entry point
 ├── package-lock.json # npm dependency lock file
 ├── package.json # npm configuration file
+├── LICENSE # License file
 └── README.md # This file
+
 ```
 
 ## 🤝 How to Contribute
